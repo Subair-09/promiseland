@@ -58,7 +58,7 @@ export const About: React.FC = () => {
             {/* Primary Image Frame */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl z-10 bg-slate-100 border-4 border-white-50 translate-y-[-4px]">
               <img 
-                src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?auto=format&fit=crop&q=80&w=800"
+                src="https://i.imgur.com/umtSmOk.png"
                 alt="Enthusiastic African secondary students studying books together at Promiseland Schools"
                 className="w-full h-[450px] object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"

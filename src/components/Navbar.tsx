@@ -112,17 +112,17 @@ export const Navbar: React.FC<NavbarProps> = ({ onApplyClick, onTourClick }) => 
             {/* Logo Section */}
             <div 
               onClick={() => handleScrollTo('home')} 
-              className="flex items-center gap-2.5 cursor-pointer group"
+              className="flex items-center gap-1.5 sm:gap-2.5 cursor-pointer group shrink-0"
             >
-              <div className="w-10 h-10 bg-brand-orange rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-md group-hover:scale-105 transition-transform duration-300">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-brand-orange rounded-lg sm:rounded-xl flex items-center justify-center text-white font-bold text-base sm:text-xl shadow-md group-hover:scale-105 transition-transform duration-300 shrink-0">
                 P
               </div>
-              <div>
-                <span className="font-display font-bold text-lg md:text-xl text-[#2D3748] tracking-tight flex items-center gap-1.5">
+              <div className="flex flex-col justify-center">
+                <span className="font-display font-bold text-sm min-[370px]:text-base sm:text-lg md:text-xl text-[#2D3748] tracking-tight flex items-center gap-1 sm:gap-1.5 leading-none">
                   PROMISELAND
-                  <span className="text-brand-orange">SCHOOLS</span>
+                  <span className="text-brand-orange font-bold">SCHOOLS</span>
                 </span>
-                <p className="text-[9px] font-sans text-slate-500 tracking-wider uppercase">Creche • Primary • College</p>
+                <p className="text-[7.5px] sm:text-[9px] font-sans text-slate-500 tracking-wider uppercase mt-0.5 whitespace-nowrap hidden min-[350px]:block">Creche • Primary • College</p>
               </div>
             </div>
 
@@ -160,16 +160,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onApplyClick, onTourClick }) => 
             </div>
 
             {/* Mobile Hamburger Trigger */}
-            <div className="lg:hidden flex items-center gap-3">
+            <div className="lg:hidden flex items-center gap-1.5 sm:gap-3 shrink-0">
               <button
                 onClick={onApplyClick}
-                className="sm:hidden px-3 py-1.5 bg-brand-orange hover:bg-brand-orange-hover text-white rounded-md text-[11px] font-bold tracking-tight transition-transform active:scale-95 duration-200"
+                className="sm:hidden px-2.5 py-1.5 bg-brand-orange hover:bg-brand-orange-hover text-white rounded-md text-[11px] font-bold tracking-tight transition-transform active:scale-95 duration-200"
               >
                 Apply
               </button>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="p-2 rounded-lg text-[#2D3748] hover:bg-slate-100 transition-colors focus:outline-none"
+                className="p-1.5 sm:p-2 rounded-lg text-[#2D3748] hover:bg-slate-100 transition-colors focus:outline-none"
                 aria-label="Toggle menu"
               >
                 <LucideIcon name={isOpen ? 'X' : 'Menu'} size={24} />

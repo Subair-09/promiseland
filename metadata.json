@@ -1,0 +1,8 @@
+{
+  "name": "Promiseland Schools",
+  "description": "A premium, fully responsive website landing page for Promiseland Schools in Lagos, Nigeria. Spanning Creche, Nursery, Primary, and College education with interactive maps and gallery lightboxes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
